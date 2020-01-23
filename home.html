@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Generator" content="">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+
+  <title>"home page"</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="p1.css">
+
+</head>
+<!-- css 시작 --------------------------------------------------------->
+<!-- ******* --------------------------------------------------------->
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial;
+    padding: 1px;
+
+    background-color: black;
+  }
+
+  /* Header/Title -------------------------- */
+
+  .header {
+    height: 80px;
+    padding-top: 10px;
+    text-align: center;
+    background: yellow;
+  }
+
+  .header h1 {
+    height: 60px;
+    margin: 5px;
+    font-size: 40px;
+  }
+
+  /* Style the top navigation bar -------------- */
+  .topnav {
+    overflow: hidden;
+    background-color: ivory;
+  }
+
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .row {
+    padding: 1px;
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Reset -------------------------------- */
+  body {
+    background-color: #fff;
+  }
+
+  body,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+
+  .clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+
+  .wrapper {
+    width: 800px;
+    margin: 100px auto;
+  }
+
+  .sq {
+    color: white;
+    background-color: skyblue;
+    padding: 1rem;
+  }
+
+  .sq-item {
+    float: left;
+    width: 25%;
+    padding-top: 25%;
+    position: relative;
+  }
+
+  .sq-item-large {
+    width: 50%;
+    padding-top: 50%;
+  }
+
+  .sq-item-long {
+    padding-top: 75%;
+  }
+
+  .sq-item-wide {
+    width: 50%;
+  }
+
+  .sq-item-float-right {
+    float: right;
+  }
+
+  .sq-item-anchor {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0.2rem;
+    padding: 0rem;
+    font-size: 1rem;
+    overflow: hidden;
+    opacity: 1;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    /* transition: all .3s; */
+    border-radius: 10px;
+    border: 1 solid white;
+  }
+
+  /* .sq-item-anchor::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#00000000', GradientType=0);
+    z-index: 10;
+  } /*
+
+  /* .sq-item-anchor-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  } */
+
+  .sq-item-anchor-title {
+    position: relative;
+    z-index: 20;
+  }
+
+  img {
+    display: inline-block;
+    }
+
+  /* 가운데 사진내용 --------------------------------------------------------- */
+
+  .pic {
+    padding: 1px;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .pic1 {
+    margin: 0 3 0 0;
+    padding: 1px;
+    border: 3 10 3 3 solid black;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* Footer ----------------------------------------------------------- */
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background-color: darkgrey;
+    margin-top: 0px;
+    color: white;
+  }
+</style> <!-- 분류 --------------------------------------------------------->
+
+
+<body>
+  <div class="header">
+    <h1>하노이 114</h1>
+  </div>
+
+  <!-- menu 분류 --------------------------------------------------------->
+  <div class="topnav">
+    <a href="#">홈</a>
+    <a href="#">이벤트</a>
+    <a href="#">관광지</a>
+    <a href="#" style="float:right">주소록</a>
+  </div>
+  <hr>
+
+  <div class="pic">
+    <ul class="sq clearfix">
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="p1.html">
+          <img class="sq-item-anchor-cover" src="img/hspt.jpeg" width="100%">
+          <span class="sq-item-anchor-title">병원약국</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="p1.html">
+          <img class="sq-item-anchor-cover" src="img/rstr.jpeg" width="100%">
+          <span class="sq-item-anchor-title">식당</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="">
+          <img class="sq-item-anchor-cover" src="img/mys.jpeg" width="100%">
+          <span class="sq-item-anchor-title">미용실</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="">
+          <img class="sq-item-anchor-cover" src="img/market.jpeg" width="100%">
+          <span class="sq-item-anchor-title">market</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="p1.html">
+          <img class="sq-item-anchor-cover" src="img/.jpeg" width="100%">
+          <span class="sq-item-anchor-title">건설자재</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="p1.html">
+          <img class="sq-item-anchor-cover" src="img/bds.jpeg" width="100%">
+          <span class="sq-item-anchor-title">부동산</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="">
+          <img class="sq-item-anchor-cover" src="img/hotel.jpeg" width="100%">
+          <span class="sq-item-anchor-title">hotel</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="">
+          <img class="sq-item-anchor-cover" src="img/.jpeg" width="100%">
+          <span class="sq-item-anchor-title">골프</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="p1.html">
+          <img class="sq-item-anchor-cover" src="img/school.jpeg" width="100%">
+          <span class="sq-item-anchor-title">학교학원</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="">
+          <img class="sq-item-anchor-cover" src="img/kdgd.jpeg" width="100%">
+          <span class="sq-item-anchor-title">유치원</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="">
+          <img class="sq-item-anchor-cover" src="img/" width="100%">
+          <span class="sq-item-anchor-title">운</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="">
+          <img class="sq-item-anchor-cover" src="img/mong" width="100%">
+          <span class="sq-item-anchor-title">골</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="p1.html">
+          <img class="sq-item-anchor-cover" src="img/church.jpeg" width="100%">
+          <span class="sq-item-anchor-title">church</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="p1.html">
+          <img class="sq-item-anchor-cover" src="img/hsptlg" width="100%">
+          <span class="sq-item-anchor-title">항공여행</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="">
+          <img class="sq-item-anchor-cover" src="img/mong" width="100%">
+          <span class="sq-item-anchor-title">렌트카</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="">
+          <img class="sq-item-anchor-cover" src="img/mong" width="100%">
+          <span class="sq-item-anchor-title">운송택배</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="p1.html">
+          <img class="sq-item-anchor-cover" src="img/hsptng" width="100%">
+          <span class="sq-item-anchor-title">은행</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="p1.html">
+          <img class="sq-item-anchor-cover" src="img/법률.jpeg" width="100%">
+          <span class="sq-item-anchor-title">법률</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="">
+          <img class="sq-item-anchor-cover" src="img/mong" width="100%">
+          <span class="sq-item-anchor-title">생산판매</span>
+        </a>
+      </li>
+
+      <li class="sq-item">
+        <a class="sq-item-anchor" href="p1.html">
+          <img class="sq-item-anchor-cover" src="img/.jpeg" width="100%">
+          <span class="sq-item-anchor-title">수입판매</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  </div>
+  </div>
+
+  <!-- 분류 <footer> ------------------------------------------->
+  <div class="footer">
+    <h5>바닥글 기재할 곳</h5>
+  </div>
+
+</body>
+
+</html>
