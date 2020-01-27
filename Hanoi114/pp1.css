@@ -1,0 +1,49 @@
+<!-- css 시작 --------------------------------------------------------->
+<style>
+* { box-sizing: border-box;}
+body {
+  font-family: Arial;
+  padding: 1px;
+  }
+
+
+/* Header/Blog Title */
+
+.header {
+margin: 5px;
+height: 50px;
+padding: 1px;
+text-align: center;
+background: none; }
+
+.header h1 {
+margin: 1px 1px;
+height: 30px;
+padding: 1px 30px;
+}
+
+
+
+/* 가운데 사진내용 --------------------------------------------------------- */
+.pic {
+  padding: 1px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.pic1 {
+  padding: 1px;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
